@@ -30,7 +30,6 @@ export default {
       "grey-light": "#ccd7e0",
       grey: "#adb6c4",
     },
-    extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };

@@ -5,7 +5,7 @@
         <span href="/" class="mr-2">
           <img src="assets/img/logo.svg" alt="logo" />
         </span>
-        <p class="font-body hidden text-2xl font-bold text-primary lg:block">John Doe</p>
+        <p class="font-body hidden text-2xl font-bold text-primary lg:block">McCormick Lab</p>
       </NuxtLink>
       <div class="flex items-center lg:hidden">
         <svg
@@ -52,18 +52,33 @@
               Publications
             </NuxtLink>
           </li>
-
-          <li class="group relative mb-1 mr-6">
-            <div
-              class="absolute bottom-0 left-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow"></div>
-            <NuxtLink
-              to="/contact"
-              class="font-body relative z-30 block px-2 text-lg font-medium text-primary transition-colors group-hover:text-green">
-              Contact
-            </NuxtLink>
-          </li>
         </ul>
       </div>
+    </div>
+  </div>
+
+  <div
+    class="pointer-events-none fixed inset-0 z-50 flex bg-black bg-opacity-80 opacity-0 transition-opacity lg:hidden"
+    :class="isMobileMenuOpen ? 'pointer-events-auto opacity-100' : ''">
+    <div class="ml-auto w-2/3 bg-green p-4 md:w-1/3">
+      <span class="bx bx-x absolute right-0 top-0 mr-4 mt-4 text-4xl text-white" @click="isMobileMenuOpen = false">
+        X
+      </span>
+      <ul class="mt-8 flex flex-col">
+        <li class="">
+          <NuxtLink href="/" class="font-body mb-3 block px-2 text-lg font-medium text-white">Intro</NuxtLink>
+        </li>
+
+        <li class="">
+          <NuxtLink href="/researches" class="font-body mb-3 block px-2 text-lg font-medium text-white">
+            Research
+          </NuxtLink>
+        </li>
+
+        <li class="">
+          <a href="/publications" class="font-body mb-3 block px-2 text-lg font-medium text-white">Publications</a>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
