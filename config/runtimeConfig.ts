@@ -1,9 +1,14 @@
 const runtimeConfig = {
   public: {
-    siteName: 'Nuxt.js TypeScript Boilerplate',
-    // baseURL: process.env.ENDPOINT,
-    // appName: process.env.APP_NAME,
-    // token: process.env.TOKEN,
+    siteName: "Nuxt.js TypeScript Boilerplate",
+    recaptcha: {
+      siteKey: "6LcSA2IpAAAAAGl6OUD8-L0KQWoLinKPCzLiGenZ",
+    },
+  },
+  private: {
+    recaptcha: {
+      siteKey: "6LcSA2IpAAAAAGl6OUD8-L0KQWoLinKPCzLiGenZ",
+    },
   },
 };
 
