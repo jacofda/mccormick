@@ -7,7 +7,7 @@
         <a
           class="font-body mb-12 mt-10 block bg-secondary px-10 py-4 text-center text-xl font-semibold text-white transition-colors hover:bg-green sm:inline-block sm:text-left sm:text-2xl"
           target="_BLANK"
-          href="https://mccormicklab.com/links/#:~:text=Citation%20Metrics-,Google%20schola,-r">
+          href="https://scholar.google.com/citations?user=SGBxyVwAAAAJ&hl=en">
           Google Scholar
         </a>
 
